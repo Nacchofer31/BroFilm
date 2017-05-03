@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BroFilm!</title>
+    <link rel="stylesheet" href="https://bootswatch.com/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!--Navigation BAR-->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="nav-header">
+          <a class="navbar-brand" href="index.html">BroFILM!</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--Browser CONTAINER-->
+    <div class="container">
+      <div class="jumbotron">
+        <h3 class="text-center">Bro any film you want!</h3>
+        <form id="searchForm">
+          <input type="text" class="form-control" id="searchText" placeholder="Search the film...">
+        </form>
+      </div>
+    </div>
+
+    <!--Query Results CONTAINER-->
+    <div class="container">
+      <div id="movies" class="row"></div>
+    </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+			  crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/main.js"></script>
+  </body>
+</html>
